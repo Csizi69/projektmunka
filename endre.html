@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preprocesszor Projektmunka</title>
-    <link rel="stylesheet" href="./endre.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Preprocesszorok</title>
+  <link rel="stylesheet" href="church.css">
 </head>
 <body>
-
-    <div>
-    <button class="gomb" type="button" onclick="window.location.href='index.html'"><h1>Főoldal</h1></button>
+  <header>
+    <div class="gomb">
+    <button onclick="location.href='index.html'">Főoldal</button>
     </div>
+    <h1>CSS Preprocesszorok</h1>
+    <p>SCSS • PostCSS • Stylable</p>
+    <section>
+  <h4>A preprocesszor egy olyan eszköz, amely a bemenetet (pl. forráskódot) előkészíti, módosítja vagy kiegészíti, mielőtt az a tényleges feldolgozási lépésbe kerülne.</h4>
+</section>
+  </header>
+  <main class="grid-container">
+
+    <section class="card postcss">
+      <h2>PostCSS</h2>
+      <p>
+        A <strong>PostCSS</strong> nem klasszikus preprocesszor, hanem egy <em>plugin-alapú</em> rendszer.
+        Lehetővé teszi, hogy a CSS-t automatikusan kiegészítsék eszközök, például az
+        <strong>Autoprefixer</strong> vagy a <strong>CSSNano</strong>.
+      </p>
+      <p>
+        <strong>Előnye:</strong> gyors, modern és testre szabható.  
+        <strong>Hátránya:</strong> beállítása bonyolultabb lehet a pluginek miatt.
+      </p>
+      <div class="demo demo-postcss">PostCSS effekt</div>
+    </section>
+
+    <section class="card scss">
+        <h2>SCSS (Sassy CSS)</h2>
+        <p>
+          Az <strong>SCSS (Sassy CSS)</strong> egy SASS alapú rendszer CSS alapú szintaktikával. 
+        </p>
+        <p>
+          <strong>Előnye:</strong> gyors, modern és testre szabható.  
+          <strong>Hátránya:</strong> beállítása bonyolultabb lehet a pluginek miatt.
+        </p>
+        <div class="demo demo-scss">SCSS effekt</div>
+      </section>
+
+      <section class="card stylable">
+        <h2>Stylable</h2>
+        <p>
+          Az <strong>Stylable</strong> Egy CSS preprocesszor komponens alapú JavaScript alkalmazásokhoz.
+        </p>
+        <div class="demo demo-stylable">Stylable effekt</div>
+      </section>
+  
+
+  </main>
 </body>
 </html>
