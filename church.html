@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Preprocesszorok</title>
+  <link rel="stylesheet" href="church.css">
+</head>
+<body>
+  <header>
+    <div class="gomb">
+    <button onclick="location.href='index.html'">Főoldal</button>
+    </div>
+    <h1>CSS Preprocesszorok</h1>
+    <p>Sass • LESS • Stylus • PostCSS</p>
+    <section>
+  <h4>A preprocesszor egy olyan eszköz, amely a bemenetet (pl. forráskódot) előkészíti, módosítja vagy kiegészíti, mielőtt az a tényleges feldolgozási lépésbe kerülne.</h4>
+</section>
+  </header>
+  <main class="grid-container">
+    <section class="card sass">
+      <h2>Sass</h2>
+      <p>
+        A <strong>Sass</strong> (Syntactically Awesome Style Sheets) a legismertebb preprocesszor.
+        Támogatja a <em>változókat</em>, <em>mixineket</em>, <em>függvényeket</em> és a <em>beágyazott szelektorokat</em>.
+        Két szintaxisa van: a behúzásos <code>.sass</code> és a CSS-szerű <code>.scss</code>.
+      </p>
+      <p>
+        <strong>Előnye:</strong> jól strukturált, moduláris kód készíthető vele.
+        <strong>Hátránya:</strong> a fordítás külön eszközt igényel.
+      </p>
+      <div class="demo demo-sass">Sass stílus</div>
+    </section>
+
+    <section class="card less">
+      <h2>LESS</h2>
+      <p>
+        A <strong>LESS</strong> (Leaner Style Sheets) nagyon hasonló a Sass-hoz, de
+        <em>JavaScript-alapú</em>, és egyszerűbben integrálható a frontendes környezetekbe.
+        A kiterjesztése <code>.less</code>.
+      </p>
+      <p>
+        <strong>Előnye:</strong> könnyen tanulható, gyorsan beállítható.  
+        <strong>Hátránya:</strong> kevesebb funkció és kisebb közösség, mint a Sass-nál.
+      </p>
+      <div class="demo demo-less">LESS animáció</div>
+    </section>
+
+    <section class="card stylus">
+      <h2>Stylus</h2>
+      <p>
+        A <strong>Stylus</strong> rendkívül rugalmas szintaxist használ – akár zárójelek és pontosvesszők nélkül is írható.
+        Kiterjesztése <code>.styl</code>, és főként <em>Node.js</em> környezetben használják.
+      </p>
+      <p>
+        <strong>Előnye:</strong> gyors, szabad szintaxis.  
+        <strong>Hátránya:</strong> kevésbé elterjedt más preprocesszorokhoz képest.
+      </p>
+      <div class="demo demo-stylus">Stylus példa</div>
+    </section>
+
+    <section class="card postcss">
+      <h2>PostCSS</h2>
+      <p>
+        A <strong>PostCSS</strong> nem klasszikus preprocesszor, hanem egy <em>plugin-alapú</em> rendszer.
+        Lehetővé teszi, hogy a CSS-t automatikusan kiegészítsék eszközök, például az
+        <strong>Autoprefixer</strong> vagy a <strong>CSSNano</strong>.
+      </p>
+      <p>
+        <strong>Előnye:</strong> gyors, modern és testre szabható.  
+        <strong>Hátránya:</strong> beállítása bonyolultabb lehet a pluginek miatt.
+      </p>
+      <div class="demo demo-postcss">PostCSS effekt</div>
+    </section>
+
+  </main>
+
+  <section class="comparison">
+    <h2>Sass vs LESS</h2>
+    <div class="compare-grid">
+      <div class="compare sass">
+        <h3>Sass</h3>
+        <ul>
+          <li>Több funkció (mixinek, modulrendszer, függvények)</li>
+          <li>Fejlettebb beágyazás</li>
+          <li>Jobb hibakezelés</li>
+          <li>Nagyobb közösség és támogatás</li>
+        </ul>
+      </div>
+      <div class="compare less">
+        <h3>LESS</h3>
+        <ul>
+          <li>Egyszerűbb tanulási görbe</li>
+          <li>JavaScript-alapú működés</li>
+          <li>Könnyen integrálható build eszközökbe</li>
+          <li>Kisebb funkciókészlet, mint a Sass</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

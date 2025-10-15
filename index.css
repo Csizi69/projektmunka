@@ -1,0 +1,45 @@
+body {
+    background-color: darkseagreen;
+    font-family: sans-serif;
+    font-variant: normal;
+}
+h1 {
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+.pe {
+    font-size: 300%;
+    font-family: sans-serif;
+    font-variant: normal;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+}
+.gomb {
+    width: 500px;
+    height: 200px;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: #83963d;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    user-select: none;
+  }
+
+  .gomb:hover {
+    transform: scale(1.05);
+  }
+.nemtom {
+    padding-top: 80px;
+    margin-bottom: 40px;
+}
